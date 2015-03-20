@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Calculating the Relationship of Time and Value</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s08-01-the-time-value-of-money.html"><img src="shared/images/batch-left.png"></a> <a href="s08-01-the-time-value-of-money.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s08-03-valuing-a-series-of-cash-flows.html">Next Section</a> <a href="s08-03-valuing-a-series-of-cash-flows.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="fwk-134226-ch04_s02" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">4.2</span> Calculating the Relationship of Time and Value</h2>
+    <div class="learning_objectives editable block" id="fwk-134226-ch04_s02_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="fwk-134226-ch04_s02_l01">
+            <li>Identify the factors you need to know to relate a present value to a future value.</li>
+            <li>Write the algebraic expression for the relationship between present and future value.</li>
+            <li>Discuss the use of the algebraic expression in evaluating the relationship between present and future values.</li>
+            <li>Explain the importance of understanding the relationships among the factors that affect future value.</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="fwk-134226-ch04_s02_p01">Financial calculation is not often a necessary skill since it is easier to use calculators, spreadsheets, and software. However, understanding the calculations is important in understanding the relationships between time, risk, opportunity cost, and value.</p>
+    <p class="para editable block" id="fwk-134226-ch04_s02_p02">To do the math, you need to know</p>
+    <ul class="itemizedlist editable block" id="fwk-134226-ch04_s02_l02">
+        <li>what the future cash flows (CF) will be,</li>
+        <li>when the future cash flows will be,</li>
+        <li>the rate at which time affects value (e.g., the costs per time period, or the magnitude [the size or amount] of the effect of time on value).</li>
+    </ul>
+    <p class="para editable block" id="fwk-134226-ch04_s02_p03">It is usually not difficult to forecast the timing and amounts of future cash flows. Although there may be some uncertainty about them, gauging the rate at which time affects money can require some judgment. That rate, commonly called the <span class="margin_term"><a class="glossterm">discount rate</a><span class="glossdef">The effect of time on value or the rate at which time affects value; used when calculating the equivalent present value of a nominal future value.</span></span> because time discounts value, is the opportunity cost of not having liquidity. Opportunity cost derives from forgone choices or sacrificed alternatives, and sometimes it is not clear what those might have been (see <a class="xref" href="fwk-134226-ch02#fwk-134226-ch02">Chapter 2 "Basic Ideas of Finance"</a>). It is an important judgment call to make, though, because the rate will directly affect the valuation process.</p>
+
+    <p class="para editable block" id="fwk-134226-ch04_s02_p04">At times, the alternatives are clear: you could be putting the liquidity in an account earning 3 percent, so that’s your opportunity cost of not having it. Or you are paying 6.5 percent on a loan, which you wouldn’t be paying if you had enough liquidity to avoid having to borrow; so that’s your opportunity cost. Sometimes, however, your opportunity cost is not so clear.</p>
+    <p class="para editable block" id="fwk-134226-ch04_s02_p05">Say that today is your twentieth birthday. Your grandparents have promised to give you $1,000 for your twenty-first birthday, one year from today. If you had the money today, what would it be worth? That is, how much would $1,000 worth of liquidity one year from now be worth today?</p>
+    <p class="para editable block" id="fwk-134226-ch04_s02_p06">That depends on the cost of its not being liquid today, or on the opportunity costs and risks created by not having liquidity today. If you had $1,000 today, you could buy things and enjoy them, or you could deposit it in an interest-bearing account. So on your twenty-first birthday, you would have more than $1,000. You would have the $1,000 plus whatever interest it had earned. If your bank pays 4 percent per year (interest rates are always stated as annual rates) on your account, then you would earn $40 of interest in the next year, or $1,000 × .04. So on your twenty-first birthday you would have $1,040.</p>
+    <span class="informalequation block"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-134226_ch04_s02_m001" display="block">
+ <mrow>
+  <mn>$1,000</mn><mo>+</mo><mo stretchy="false">(</mo><mn>1,000</mn><mo>×</mo><mn>0.04</mn><mo stretchy="false">)</mo><mo>=</mo><mn>$1,000</mn><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mn>0.04</mn><mo stretchy="false">)</mo><mo>=</mo><mn>$1,040</mn>
+ </mrow>
+</math>
+</span>
+    <div class="figure large editable block" id="fwk-134226-ch04_s02_f02">
+        <p class="title"><span class="title-prefix">Figure 4.4</span> </p>
+        <img src="section_08/4105113523a9118c9397ae17781f7be9.jpg">
+    </div>
+    <p class="para editable block" id="fwk-134226-ch04_s02_p07">If you left that amount in the bank until your twenty-second birthday, you would have</p>
+    <span class="informalequation block"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-134226_ch04_s02_m002" display="block">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mn>1,040</mn><mo>+</mo><mo stretchy="false">(</mo><mn>1,040</mn><mo>×</mo><mn>0.04</mn><mo stretchy="false">)</mo></mtd><mtd><mo>=</mo></mtd><mtd><mn>1,040</mn><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mn>0.04</mn><mo stretchy="false">)</mo>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+   </mtd><mtd>
+    <mo>=</mo></mtd><mtd><mo stretchy="false">[</mo><mn>1,000</mn><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mn>0.04</mn><mo stretchy="false">)</mo><mo stretchy="false">]</mo><mtext> </mtext><mo>×</mo><mtext> </mtext><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mn>0.04</mn><mo stretchy="false">)</mo>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+   </mtd><mtd>
+    <mo>=</mo></mtd><mtd><mn>1,000</mn><mo>×</mo><msup><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mn>0.04</mn><mo stretchy="false">)</mo></mrow>
+     <mn>2</mn>
+    </msup>
+    <mo>=</mo><mn>1,081.60.</mn>
+   </mtd>
+  </mtr>
+ </mtable>
+ 
+</math>
+</span>
+    <p class="para editable block" id="fwk-134226-ch04_s02_p08">To generalize the computation, if your <span class="margin_term"><a class="glossterm">present value</a><span class="glossdef">Liquid value in the present, or the discounted value of a nominal amount of future liquidity, taking into account the effect of time on value.</span></span>, or PV, is your value today, <em class="emphasis">r</em> is the rate at which time affects value or discount rate (in this case, your interest rate), and if <em class="emphasis">t</em> is the number of time periods between you and your liquidity, then the <span class="margin_term"><a class="glossterm">future value</a><span class="glossdef">The value of a present liquidity or projected series of cash flows in the future, accounting for the effects of time on value.</span></span>, or FV, of your wealth would be</p>
+    <div class="figure large editable block" id="fwk-134226-ch04_s02_f03">
+        <p class="title"><span class="title-prefix">Figure 4.5</span> </p>
+        <img src="section_08/d394f5661914aec253795d4abb45212e.jpg">
+    </div>
+    <span class="informalequation block"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-134226_ch04_s02_m003" display="block">
+ <mrow>
+  <mtext>PV</mtext><mo>×</mo><msup>
+   <mrow>
+    <mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mtext>r</mtext><mo stretchy="false">)</mo>
+   </mrow>
+   <mtext>t</mtext>
+  </msup>
+  <mo>=</mo><mtext>FV</mtext><mtext>.</mtext>
+ </mrow>
+</math>
+</span>
+    <p class="para editable block" id="fwk-134226-ch04_s02_p09">In this case,</p>
+    <span class="informalequation block"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-134226_ch04_s02_m004" display="block">
+ <mrow>
+  <mn>1,000</mn><mo>×</mo><msup>
+   <mrow>
+    <mo stretchy="false">(</mo><mn>1.04</mn><mo stretchy="false">)</mo>
+   </mrow>
+   <mn>1</mn>
+  </msup>
+  <mo>=</mo><mn>1,040</mn><mtext> and </mtext><mn>1,000</mn><mo>×</mo><msup>
+   <mrow>
+    <mo stretchy="false">(</mo><mn>1.04</mn><mo stretchy="false">)</mo>
+   </mrow>
+   <mn>2</mn>
+  </msup>
+  <mo>=</mo><mn>1,081.60.</mn>
+ </mrow>
+</math>
+</span>
+    <p class="para editable block" id="fwk-134226-ch04_s02_p10">Assuming there is little chance that your grandparents will not be able to give this gift, there is negligible risk. Your only cost of not having liquidity now is the opportunity cost of having to delay consumption or not earning the interest you could have earned.</p>
+    <p class="para editable block" id="fwk-134226-ch04_s02_p11">The cost of delayed consumption is largely derived from a subjective valuation of whatever is consumed, or its <span class="margin_term"><a class="glossterm">utility</a><span class="glossdef">Value, including subjective or nonmarket value as well as objective or market value.</span></span> or satisfaction. The more value you place on having something, the more it “costs” you not to have it, and the more the time that you are without it affects its value.</p>
+    <p class="para editable block" id="fwk-134226-ch04_s02_p12">Assuming that if you had the money today you would save it (as it’s much harder to quantify your joy from consumption), by having to wait to get it until your twenty-first birthday—and <em class="emphasis">not</em> having it today—you miss out on $40 it could have earned.</p>
+    <p class="para editable block" id="fwk-134226-ch04_s02_p13">So, what would that nominal $1,000 (that future value that you get one year from now) actually be worth today? The rate at which time affects your value is 4 percent because that’s what having a choice (spend it or invest it) could earn for you if only you had received the $1,000. That’s your opportunity cost. That’s what it costs you to not have liquidity. Since</p>
+    <span class="informalequation block"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-134226_ch04_s02_m005" display="block">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mtext>PV</mtext><mo>×</mo><msup>
+    <mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mtext>r</mtext><mo stretchy="false">)</mo></mrow>
+     <mtext>t</mtext>
+    </msup></mtd><mtd>
+    <mo>=</mo></mtd><mtd><mtext>FV,</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+   </mtd><mtd>
+    <mtext>then</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>PV</mtext></mtd><mtd><mo>=</mo></mtd><mtd><mtext>FV</mtext><mo>/</mo><mo stretchy="false">[</mo><msup>
+    <mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mtext>r</mtext><mo stretchy="false">)</mo></mrow>
+     <mtext>t</mtext>
+    </msup>
+    <mo stretchy="false">]</mo><mo>,</mo>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+   </mtd><mtd>
+    <mtext>so</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>PV</mtext></mtd><mtd><mo>=</mo></mtd><mtd><mn>1,000</mn><mo>/</mo><mo stretchy="false">(</mo><msup>
+     <mn>1.04</mn>
+     <mn>1</mn>
+    </msup>
+    <mo stretchy="false">)</mo><mo>=</mo><mn>961.5385</mn><mtext>.</mtext>
+   </mtd>
+  </mtr>
+ </mtable>
+ 
+</math>
+</span>
+    <p class="para editable block" id="fwk-134226-ch04_s02_p16">Your gift is worth $961.5385 today (its present value). If your grandparents offered to give you your twenty-first birthday gift on your twentieth birthday, they could give you $961.5385 today, which would be the equivalent value to you of getting $1,000 one year from now.</p>
+    <p class="para editable block" id="fwk-134226-ch04_s02_p17">It is important to understand the relationships between time, risk, opportunity cost, and value. This equation describes that relationship:</p>
+    <span class="informalequation block"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-134226_ch04_s02_m006" display="block">
+ <mrow>
+  <mtext>PV</mtext><mo>×</mo><msup>
+   <mrow>
+    <mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mtext>r</mtext><mo stretchy="false">)</mo>
+   </mrow>
+   <mtext>t</mtext>
+  </msup>
+  <mo>=</mo><mtext>FV</mtext><mtext>.</mtext>
+ </mrow>
+</math>
+</span>
+    <p class="para editable block" id="fwk-134226-ch04_s02_p18">The “r” is more formally called the “discount rate” because it is the rate at which your liquidity is discounted by time, and it includes not only opportunity costs but also risk. (On some financial calculators, “r” is displayed as “I” or “i.”)</p>
+    <p class="para editable block" id="fwk-134226-ch04_s02_p19">The “t” is how far away you are from your liquidity over time.</p>
+    <p class="para editable block" id="fwk-134226-ch04_s02_p20">Studying this equation yields valuable insights into the relationship it describes. Looking at the equation, you can observe the following relationships.</p>
+    <p class="para editable block" id="fwk-134226-ch04_s02_p21">The more time (t) separating you from your liquidity, the more time affects value. The less time separating you from your liquidity, the less time affects value (as <em class="emphasis">t</em> decreases, PV increases).</p>
+    <div class="informaltable block" frame="all">
+        <table cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td>As <em class="emphasis">t</em> increases</td>
+                    <td>the PV of your FV liquidity decreases</td>
+                </tr>
+                <tr>
+                    <td>As <em class="emphasis">t</em> decreases</td>
+                    <td>the PV of your FV liquidity increases</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="para editable block" id="fwk-134226-ch04_s02_p22">The greater the rate at which time affects value (r), or the greater the opportunity cost and risk, the more time affects value. The less your opportunity cost or risk, the less your value is affected.</p>
+    <div class="informaltable block" frame="all">
+        <table cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td>As <em class="emphasis">r</em> increases</td>
+                    <td>the PV of your FV liquidity decreases</td>
+                </tr>
+                <tr>
+                    <td>As <em class="emphasis">r</em> decreases</td>
+                    <td>the PV of your FV liquidity increases</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="para editable block" id="fwk-134226-ch04_s02_p23"><a class="xref" href="#fwk-134226-ch04_s02_f04">Figure 4.6 "Present Values, Interest Rates, Time, and Future Values"</a> presents examples of these relationships.</p>
+    <div class="figure large editable block" id="fwk-134226-ch04_s02_f04">
+        <p class="title"><span class="title-prefix">Figure 4.6</span> Present Values, Interest Rates, Time, and Future Values</p>
+        <img src="section_08/32ad7c6c043ba8912550da7d18fc0125.jpg">
+    </div>
+    <p class="para editable block" id="fwk-134226-ch04_s02_p24">The strategy implications of this understanding are simple, yet critical. All things being equal, it is more valuable to have liquidity (get paid, or have positive cash flow) <em class="emphasis">sooner</em> rather than later and give up liquidity (pay out, or have negative cash flow) <em class="emphasis">later</em> rather than sooner.</p>
+    <p class="para editable block" id="fwk-134226-ch04_s02_p25">If possible, accelerate incoming cash flows and decelerate outgoing cash flows: get paid sooner, but pay out later. Or, as Popeye’s pal Wimpy used to say, “I’ll give you 50 cents tomorrow for a hamburger today.”</p>
+    <div class="key_takeaways editable block" id="fwk-134226-ch04_s02_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="fwk-134226-ch04_s02_l03">
+            <li>
+                <p class="para">To relate a present (liquid) value to a future value, you need to know</p>
+                <ul class="itemizedlist" id="fwk-134226-ch04_s02_l04">
+                    <li>what the present value is or the future value will be,</li>
+                    <li>when the future value will be,</li>
+                    <li>the rate at which time affects value: the costs per time period, or the magnitude of the effect of time on value.</li>
+                </ul>
+            </li>
+            <li>
+                <p class="para">The relationship of</p>
+                <ul class="itemizedlist" id="fwk-134226-ch04_s02_l05">
+                    <li>present value (PV),</li>
+                    <li>future value (FV),</li>
+                    <li>risk and opportunity cost (the discount rate, r), and</li>
+                    <li>time (t), may be expressed as</li>
+                    <li>PV × (1 + r)<sup class="superscript">t</sup> = FV.</li>
+                </ul>
+            </li>
+            <li>
+                <p class="para">The above equation yields valuable insights into these relationships:</p>
+                <ul class="itemizedlist" id="fwk-134226-ch04_s02_l06">
+                    <li>The more time (t) creates distance from liquidity, the more time affects value.</li>
+                    <li>The greater the rate at which time affects value (r), or the greater the opportunity cost and risk, the more time affects value.</li>
+                    <li>The closer the liquidity, the less time affects value.</li>
+                    <li>The less the opportunity cost or risk, the less value is affected.</li>
+                </ul>
+            </li>
+            <li>To maximize value, get paid sooner and pay later.</li>
+        </ul>
+    </div>
+    <div class="exercises editable block" id="fwk-134226-ch04_s02_n03">
+        <h3 class="title">Exercises</h3>
+        <ol class="orderedlist" id="fwk-134226-ch04_s02_l07">
+            <li>In My Notes or your financial planning journal, identify a future cash flow. Calculate its present value and then calculate its future value based on the discount rate and time to liquidity. Repeat the process for other future cash flows you identify. What pattern of relationships do you observe between time and value?</li>
+            <li>Try the Time Value of Money calculator at <a class="link" target="_blank" href="http://www.money-zine.com/Calculators/Investment-Calculators/Time-Value-of-Money-Calculator/">http://www.money-zine.com/Calculators/Investment-Calculators/Time-Value-of-Money-Calculator/</a>. How do the results compare with your calculations in Exercise 1?</li>
+            <li>View the TeachMeFinance.com animated audio slide show on “The Time Value of Money” at <a class="link" target="_blank" href="http://teachmefinance.com/timevalueofmoney.html">http://teachmefinance.com/timevalueofmoney.html</a>. This slide show will walk you through an example of how to calculate the present and future values of money. How is each part of the formula used in that lesson equivalent to the formula presented in this text?</li>
+            <li>To have liquidity, when should you increase positive cash flows and decrease negative cash flows, and why?</li>
+        </ol>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s08-01-the-time-value-of-money.html"><img src="shared/images/batch-left.png"></a> <a href="s08-01-the-time-value-of-money.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s08-03-valuing-a-series-of-cash-flows.html">Next Section</a> <a href="s08-03-valuing-a-series-of-cash-flows.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>
